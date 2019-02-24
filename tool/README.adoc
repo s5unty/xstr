@@ -1,0 +1,23 @@
+=== 如何生成iFC.dict.yaml和pyHS.dict.yaml
+:hardbreaks:
+:simp: https://github.com/rime/rime-pinyin-simp
+
+iFC.dict.yaml 是 `i` 键加拼音(或者简拼)的码表文件。
+pyHS.dict.yaml 是拼音混输的码表文件。
+这两个文件都是从 {simp}[pinyin_simp.dict.yaml](RIME 自带的拼音码表)中生成的。
+
+生成命令：
+
+----
+wget https://raw.githubusercontent.com/rime/rime-pinyin-simp/master/pinyin_simp.dict.yaml   <1>
+echo '...' > data.yaml                                                                      <2>
+/bin/grep -P "\t[a-z ]*\t[0-9]*" pinyin_simp.dict.yaml | sort -t$'\t' -k3 -Vr >> data.yaml  <2>
+python pinyin.py -i data.yaml                                                               <3>
+----
+<1> 下载最新的拼音码表
+<2> 按权重排序简体在前
+<3> 生成反查和混输字典
+
+运行这个命令需要安装 python (Linux 和 MAC 上缺省安装的)
+
+
