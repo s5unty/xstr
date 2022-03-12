@@ -2,7 +2,7 @@
 ---
 name: ipinyin
 version: "1.0"
-sort: by_weight #original
+sort: original
 columns:
   - text
   - code

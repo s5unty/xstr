@@ -1,1 +1,11 @@
 .DS_Store
+build/
+sync/
+cqkm.txt
+cqkm.userdb/
+cqlb.txt
+cqlb.userdb/
+cqyx.txt
+cqyx.userdb/
+installation.yaml
+user.yaml
