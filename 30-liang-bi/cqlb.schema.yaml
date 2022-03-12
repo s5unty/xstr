@@ -10,7 +10,7 @@ schema:
     - 二笔音形编码: 陈劲松 (1992)
     - 超强两笔编码: 付东升 (2005)
     - 超强快码编码: 付东升 (2016)
-    - Rime输入法引擎: 弓辰(号佛振) (2011)
+    - Rime输入法引擎: 弓辰[号佛振] (2011)
     - Fcitx输入法框架: CSSlayer (2010), Yuking (2001-2010)
   dependencies:
     - ipinyin
@@ -63,7 +63,7 @@ simplifier:
   opencc_config: s2t.json
 
 punctuator:
-  import_preset: default
+  import_preset: symbols
 
 recognizer:
   import_preset: default

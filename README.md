@@ -4,12 +4,20 @@
 
 ## usage
 
-使用超强快码
+- 使用超强快码
 
   ```
   1$ cd ~/.local/share/fcitx5/
   2$ mv -f rime rime.orig 
   3$ ln -sfT ${this_repo}/26-kuai-ma rime
+  ```
+
+- 使用超强两笔
+
+  ```
+  1$ cd ~/.local/share/fcitx5/
+  2$ mv -f rime rime.orig
+  3$ ln -sfT ${this_repo}/30-liang-bi rime
   ```
 
 ## lua
