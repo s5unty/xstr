@@ -6,4 +6,3 @@
 
 ![](https://du1ab.one/images/2022/chao_qiang_kuai_ma_ref.png)
 
-
