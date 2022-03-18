@@ -1,6 +1,6 @@
 # fcitx5-rime
 
-已转投「声笔系列」输入法了 ——[声笔飞码][https://sbxlm.gitee.io/sbfm/]
+已转投「声笔系列」输入法了 ——[声笔飞码](https://sbxlm.gitee.io/sbfm/)
 
 ---
 
