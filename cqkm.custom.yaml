@@ -1,0 +1,7 @@
+patch:
+  # 添加 lua 脚本的 translator
+  engine/translators/+:
+    - lua_translator@date_translator
+# engine/filters/+:
+#   - lua_filter@single_char_filter
+
