@@ -80,7 +80,7 @@ translator:
     - "xform/~(.*)$/「$1」/"
 
 reverse_lookup:
-  dictionary: pinyin_simp
+  dictionary: pinyin
   prefix: "`"
   tips: 〔拼音反查〕
   preedit_format:
