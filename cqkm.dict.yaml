@@ -13,15 +13,14 @@ encoder:
     - length_equal: 2
       formula: 'AaAbBaBb'
     - length_equal: 3
-      formula: 'AaAbBaCa'
+      formula: 'AaBaCaCb'
     - length_in_range: [4, 10]
-      formula: 'AaBaCaZa'
+      formula: 'AaBaYaZa'
 # 词汇表 (*.txt)
-vocabulary: common.dict   # 现代汉语词汇表(每行一词，无需编码)
+vocabulary: essay-zh-hans # Rime 词汇表 (https://github.com/rime/rime-essay-simp)
 # 字词典 (*.dict.yaml)
 import_tables:
   - cqkm.single           # 超强快码的单字码表
-  - cqkm.phrase           # 超强快码的词组码表
   - thuocl.it             # 清华词库-IT类 (https://github.com/thunlp/THUOCL)
 ...
 

@@ -52,14 +52,14 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "asdfgyuiopqwertzxcvbhjklnm"
+  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM"
   initials: "asdfgyuiopqwertzxcvbhjklnm"
   delimiter: " '"
   auto_select: true
   auto_clear: max_length
   max_code_length: 4
-  algebra:
-    - erase/^i.+$/
+# algebra:
+#   - erase/^i.+$/
 
 translator:
   dictionary: cqkm
@@ -72,7 +72,7 @@ translator:
   enable_charset_filter: true
   enable_encoder: true
   enable_completion: true
-  enable_sentence: false
+  enable_sentence: true
   encode_commit_history: true
   enable_user_dict: true
   max_phrase_length: 3
