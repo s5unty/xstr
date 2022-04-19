@@ -14,21 +14,21 @@
 
 2. 含有简码的单字，全码的最后一码，由小写改为大写，例如，
 
-  - 频，修改前 `pf | pfhd`, 修改后 `pf | pfhd`
-  - 合，修改前 `hhg | hhgg`, 修改后 `hhg | hhgG`
-  - 表，修改前 `bj | bje | bjei`, 修改后 `bj | bje | bjeI`
+   - 频，修改前 `pf | pfhd`, 修改后 `pf | pfhd`
+   - 合，修改前 `hhg | hhgg`, 修改后 `hhg | hhgG`
+   - 表，修改前 `bj | bje | bjei`, 修改后 `bj | bje | bjeI`
 
 3. 三字词的编码方式，由 A1A2B1C1 改为 A1B1C1C2，例如，
 
-  - 计算机, 修改前 `jisj`, 修改后 `jsjf`
-  - 输入法，修改前 `skrf`, 修改后 `srfs`
-  - 星期三，修改前 `xnqs`, 修改后 `xqsj`
+   - 计算机, 修改前 `jisj`, 修改后 `jsjf`
+   - 输入法，修改前 `skrf`, 修改后 `srfs`
+   - 星期三，修改前 `xnqs`, 修改后 `xqsj`
 
 4. 四字(及以上)词的编码方式，由 A1B1C1Z1 改为 A1B1Y1Z1，例如，
 
-  - 固态硬盘, 修改前 `gtyp`, 修改后 `gtyp`
-  - 乌鲁木齐市，修改前 `wlms`, 修改后 `wlqs`
-  - 井水不犯河水，修改前 `jsbs`, 修改后 `jshs`
+   - 固态硬盘, 修改前 `gtyp`, 修改后 `gtyp`
+   - 乌鲁木齐市，修改前 `wlms`, 修改后 `wlqs`
+   - 井水不犯河水，修改前 `jsbs`, 修改后 `jshs`
 
 ## ref
 
