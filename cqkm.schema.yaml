@@ -86,8 +86,8 @@ reverse_lookup:
   preedit_format:
     - xform/^`//
   comment_format:
-    # 以 i,o,u 开头的编码，在反查结果中排除
-    - xform/(^|[ ])[iou][a-zA-Z]*//
+    # 以 i,u,v 开头的编码，在反查结果中排除
+    - xform/(^|[ ])[iuv][a-zA-Z]*//
     - xform/^[ ]+//
     - xform/([ ])+/ ~/
 
@@ -98,8 +98,8 @@ key_binder:
   import_preset: default
 
 recognizer:
-  import_preset: default
+# import_preset: default
   patterns:
-    punct: '^\\([0-9A-Za-z]+)$'
+    punct: '^/([0-9a-z]+)$'
     reverse_lookup: "^`[a-z]*'?$"
 
