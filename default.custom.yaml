@@ -1,19 +1,8 @@
 customization:
-  rime_version: 1.7.3+dfsg3-2build2~ppa1
+  rime_version: 1.7.3
 patch:
   schema_list:
     - schema: cqkm
-  key_binder:
-    bindings:
-      - { when: has_menu,  accept: 9,                  send: Page_Up,      }
-      - { when: has_menu,  accept: 0,                  send: Page_Down,    }
-      - { when: paging,    accept: 9,                  send: Page_Up,      }
-      - { when: paging,    accept: 0,                  send: Page_Down,    }
-      - { when: has_menu,  accept: semicolon,          send: 2             }
-      - { when: has_menu,  accept: 8,                  send: 3             }
-      - { when: always,    accept: "Control+Alt+j",    toggle: full_shape  }
-      - { when: always,    accept: "Control+Alt+f",    toggle: traditional }
-      - { when: always,    accept: "Control+period",   toggle: ascii_punct }
   switcher:
     hotkeys:
       - "Control+Alt+k"

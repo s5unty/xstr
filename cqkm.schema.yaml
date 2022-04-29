@@ -5,7 +5,7 @@ schema:
   schema_id: cqkm
   name: "超强快码"
   version: "4.10"
-  description: "超强快码(个人定制版)"
+  description: "超强快码、拼音式(非码表式)输入"
   author:
     - 二笔音形编码: "陈劲松 (1992)"
     - 超强系列编码: "付东升 (2005)"
@@ -45,37 +45,26 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - table_translator
     - reverse_lookup_translator
+    - script_translator
   filters:
     - simplifier
     - uniquifier
 
 speller:
-  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM"
+  alphabet: "asdfgyuiopqwertzxcvbhjklnm"
   initials: "asdfgyuiopqwertzxcvbhjklnm"
   delimiter: " '"
-  auto_select: true
-  auto_clear: max_length
-  max_code_length: 4
-# algebra:
-#   - erase/^i.+$/
+  algebra:
+    - derive/^([a-z]{2})([a-z])$/$1/
 
 translator:
   dictionary: cqkm
   prism: cqkm
-  strict_spelling: true
-  preedit_format:
-    - xform/[ ]/' /
   disable_user_dict_for_patterns:
-    - "^[a-zA-Z]{1,3}$"   # 禁止单字（一二三级简码）调频
-  enable_charset_filter: true
-  enable_encoder: true
-  enable_completion: true
-  enable_sentence: true
-  encode_commit_history: true
-  enable_user_dict: true
-  max_phrase_length: 3
+    - "^[a-zA-Z]{1,3}$"   # 禁止单字调频
+  preedit_format:
+    - xform/ /~/
   comment_format:
     - "xform/~(.*)$/「$1」/"
 
@@ -91,14 +80,27 @@ reverse_lookup:
     - xform/^[ ]+//
     - xform/([ ])+/ ~/
 
+simplifier:
+  opencc_config: s2t.json
+  option_name: zh_trad
+
 punctuator:
   import_preset: symbols
 
 key_binder:
   import_preset: default
+  bindings:
+    - { when: composing, accept: 7,                  send: "Delete"      }
+    - { when: composing, accept: 8,                  send: "Shift+Left"  }
+    - { when: composing, accept: 9,                  send: "Right"       }
+    - { when: composing, accept: 0,                  send: "Shift+Right" }
+    - { when: composing, accept: semicolon,          send: 2             }
+    - { when: always,    accept: "Control+Alt+j",    toggle: full_shape  }
+    - { when: always,    accept: "Control+Alt+f",    toggle: traditional }
+    - { when: always,    accept: "Control+period",   toggle: ascii_punct }
 
 recognizer:
-# import_preset: default
+  import_preset: default
   patterns:
     punct: '^/([0-9a-z]+)$'
     reverse_lookup: "^`[a-z]*'?$"
