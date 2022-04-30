@@ -1,13 +1,14 @@
 ---
 name: cqkm
-version: "4.10"
+version: "4.27"
 use_preset_vocabulary: true
 # 词汇表 (*.txt)
 vocabulary: essay-zh-hans # Rime 词汇表 (https://github.com/rime/rime-essay-simp)
 # 字词典 (*.dict.yaml)
 import_tables:
-  - cqkm.single           # 超强快码的单字码表
-  - thuocl.it             # 清华词库-IT类 (https://github.com/thunlp/THUOCL)
+  - cqkm.single           # 超强快码的单字码表(3码)
+  - thuocl.it             # 清华词库-IT类
+  - nlp-ge-1000           # 360大词典(词频大于1000)
 ...
 
 超强快码

@@ -1,6 +1,6 @@
 ---
-name: it
-version: "220405"
+name: thuocl.it
+version: "4.27"
 sort: by_weight
 use_preset_vocabulary: false
 columns:
