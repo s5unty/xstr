@@ -67,6 +67,7 @@ speller:
 translator:
   dictionary: cqkm
   prism: cqkm
+  max_phrase_length: 3
   disable_user_dict_for_patterns:
     - "^[a-zA-Z]{1,3}$"   # 禁止单字调频
   preedit_format:
