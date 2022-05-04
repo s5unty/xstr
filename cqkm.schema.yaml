@@ -58,7 +58,7 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "asdfgyuiopqwertzxcvbhjklnm"
+  alphabet: "asdfgyuiopqwertzxcvbhjklnm;"
   initials: "asdfgyuiopqwertzxcvbhjklnm"
   delimiter: " '"
   algebra:
@@ -96,20 +96,21 @@ punctuator:
   import_preset: symbols
 
 key_binder:
-# import_preset: default
+  import_preset: default
   bindings:
-    - { when: composing, accept: 7,                  send: "Home"        }
-    - { when: composing, accept: 8,                  send: "End"         }
-    - { when: composing, accept: 9,                  send: "Page_Up"     }
-    - { when: composing, accept: 0,                  send: "Page_Down"   }
-    - { when: composing, accept: ISO_Left_Tab,       send: "Shift+Left"  }
-    - { when: composing, accept: "Shift+Tab",        send: "Shift+Left"  }
-    - { when: composing, accept: Tab,                send: "Shift+Right" }
-    - { when: composing, accept: semicolon,          send: 2             }
-    - { when: composing, accept: apostrophe,         send: "Right"       }
-    - { when: composing, accept: grave,              send: "Right"       }
+    - { when: composing, accept: 1,                  send_sequence: "{Home}{Right}{Right}"                    }
+    - { when: composing, accept: 2,                  send_sequence: "{2}{End}"                                }
+    - { when: composing, accept: 3,                  send_sequence: "{3}{End}"                                }
+    - { when: composing, accept: 4,                  send_sequence: "{4}{End}"                                }
+    - { when: composing, accept: 5,                  send_sequence: "{5}{End}"                                }
+    - { when: composing, accept: 7,                  send_sequence: "{Shift+Left}{Shift+Left}{Right}{Right}"  }
+    - { when: composing, accept: 8,                  send_sequence: "{Shift+Left}{Right}{Right}"              }
+    - { when: composing, accept: 9,                  send: "Shift+Left"  }
+    - { when: composing, accept: 0,                  send: "Shift+Right" }
+    - { when: composing, accept: "Shift+asciitilde", send: "Home"        }
+    - { when: composing, accept: grave,              send: "End"         }
     - { when: composing, accept: bracketleft,        send: "Left"        }
-    - { when: composing, accept: bracketright,       send: "Shift+Right" }
+    - { when: composing, accept: bracketright,       send: "Right"       }
     - { when: always,    accept: "Control+Alt+j",    toggle: full_shape  }
     - { when: always,    accept: "Control+Alt+f",    toggle: traditional }
     - { when: always,    accept: "Control+period",   toggle: ascii_punct }
