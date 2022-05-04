@@ -8,7 +8,7 @@ vocabulary: essay-zh-hans # Rime 词汇表 (https://github.com/rime/rime-essay-s
 import_tables:
   - cqkm.single           # 超强快码的单字码表(3码)
   - cqkm.phrase           # 超强快码的词组码表(5码)
-  - cqkm.symbol           # 超强快码的特简和符号(v)
+  - cqkm.symbol           # 超强快码的简码和符号(u/;/v)
   - thuocl.it             # 清华词库-IT类
   - nlp-ge-1000           # 360大词典(词频大于1000)
 ...
