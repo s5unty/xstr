@@ -121,3 +121,8 @@ recognizer:
     punct: '^/([0-9]|[a-z]+)$'
     reverse_lookup: "^`[a-z]*'?$"
 
+menu:
+  page_size: 5
+  alternative_select_keys: " 2345"
+  alternative_select_labels: ["＃","②","③","④","⑤"]
+
