@@ -109,8 +109,7 @@ key_binder:
     - { when: composing, accept: 0,                  send: "Shift+Right" }
     - { when: composing, accept: "Shift+asciitilde", send: "Home"        }
     - { when: composing, accept: grave,              send: "End"         }
-    - { when: composing, accept: bracketleft,        send: "Left"        }
-    - { when: composing, accept: bracketright,       send: "Right"       }
+    - { when: composing, accept: "/",                send: "Escape"      }
     - { when: always,    accept: "Control+Alt+j",    toggle: full_shape  }
     - { when: always,    accept: "Control+Alt+f",    toggle: traditional }
     - { when: always,    accept: "Control+period",   toggle: ascii_punct }
