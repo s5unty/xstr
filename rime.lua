@@ -7,3 +7,6 @@ date_translator = require("date")
 -- 详见 `lua/single_char.lua`
 single_char_filter = require("single_char")
 
+-- select_character_processor: 以词定字
+-- 详见 `lua/select_character.lua`
+select_character_processor = require("select_character")
