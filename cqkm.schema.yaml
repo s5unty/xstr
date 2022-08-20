@@ -28,8 +28,8 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
-    reset: 1
-    states: [ 漢字, 汉字 ]
+    reset: 0
+    states: [ 汉字, 漢字 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
 
@@ -89,8 +89,8 @@ reverse_lookup:
     - xform/([ ])+/ ~/
 
 simplifier:
+  option_name: simplification
   opencc_config: s2t.json
-  option_name: zh_trad
 
 punctuator:
   import_preset: symbols
