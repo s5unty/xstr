@@ -58,11 +58,12 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "asdfgyuiopqwertzxcvbhjklnm;"
+  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM;"
   initials: "asdfgyuiopqwertzxcvbhjklnm"
+  finals: "ASDFGYUIOPQWERTZXCVBHJKLNM;"
   delimiter: " '"
   algebra:
-    - derive/^([a-z]{2})([a-z])$/$1/
+    - derive/^([a-z]{2})([A-Z])$/$1/
 
 translator:
   dictionary: cqkm
@@ -96,7 +97,7 @@ punctuator:
   import_preset: symbols
 
 key_binder:
-  import_preset: default
+# import_preset: default
   bindings:
     - { when: composing, accept: 1,                  send_sequence: "{Home}{Right}{Right}"                    }
     - { when: composing, accept: 2,                  send_sequence: "{2}{End}"                                }
@@ -107,9 +108,10 @@ key_binder:
     - { when: composing, accept: 8,                  send_sequence: "{Shift+Left}{Right}{Right}"              }
     - { when: composing, accept: 9,                  send: "Shift+Left"  }
     - { when: composing, accept: 0,                  send: "Shift+Right" }
-    - { when: composing, accept: "Shift+asciitilde", send: "Home"        }
-    - { when: composing, accept: grave,              send: "End"         }
-    - { when: composing, accept: "/",                send: "Escape"      }
+    - { when: composing, accept: Tab,                send: "Shift+Right" }
+    - { when: composing, accept: grave,              send: "Shift+Left"  }
+    - { when: paging,    accept: equal,              send: Page_Up       }
+    - { when: has_menu,  accept: minus,              send: Page_Down     }
     - { when: always,    accept: "Control+Alt+j",    toggle: full_shape  }
     - { when: always,    accept: "Control+Alt+f",    toggle: traditional }
     - { when: always,    accept: "Control+period",   toggle: ascii_punct }
@@ -119,9 +121,4 @@ recognizer:
   patterns:
     punct: '^/([0-9]|[a-z]+)$'
     reverse_lookup: "^`[a-z]*'?$"
-
-menu:
-  page_size: 5
-  alternative_select_keys: " 2345"
-  alternative_select_labels: ["＃","②","③","④","⑤"]
 
