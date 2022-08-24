@@ -99,21 +99,25 @@ punctuator:
 key_binder:
 # import_preset: default
   bindings:
-    - { when: composing, accept: 1,                  send_sequence: "{Home}{Right}{Right}"  }
-    - { when: composing, accept: 2,                  send_sequence: "{2}{End}"              }
-    - { when: composing, accept: 3,                  send_sequence: "{3}{End}"              }
-    - { when: composing, accept: 4,                  send_sequence: "{4}{End}"              }
-    - { when: composing, accept: 5,                  send_sequence: "{5}{End}"              }
-    - { when: composing, accept: 8,                  send_sequence: "{Shift+Left}{Right}"   }
-    - { when: composing, accept: 9,                  send: "Shift+Left"  }
-    - { when: composing, accept: 0,                  send: "Shift+Right" }
-    - { when: composing, accept: Tab,                send: "Shift+Right" }
-    - { when: composing, accept: grave,              send: "Shift+Left"  }
-    - { when: paging,    accept: equal,              send: Page_Up       }
-    - { when: has_menu,  accept: minus,              send: Page_Down     }
-    - { when: always,    accept: "Control+Alt+j",    toggle: full_shape  }
-    - { when: always,    accept: "Control+Alt+f",    toggle: traditional }
-    - { when: always,    accept: "Control+period",   toggle: ascii_punct }
+#   - { when: composing, accept: 1,                  send_sequence: "{Home}{Shift+Right}"   }
+#   - { when: composing, accept: 2,                  send_sequence: "{2}{End}"              }
+#   - { when: composing, accept: 3,                  send_sequence: "{3}{End}"              }
+#   - { when: composing, accept: 4,                  send_sequence: "{4}{End}"              }
+#   - { when: composing, accept: 5,                  send_sequence: "{5}{End}"              }
+    - { when: composing, accept: 8,                  send: "Shift+BackSpace"  }
+    - { when: composing, accept: 9,                  send: "Shift+Left"       }
+    - { when: composing, accept: parenleft,          send: "Left"             }
+    - { when: composing, accept: "Shift+parenleft",  send: "Left"             }
+    - { when: composing, accept: 0,                  send: "Shift+Right"      }
+    - { when: composing, accept: parenright,         send: "Right"            }
+    - { when: composing, accept: "Shift+parenright", send: "Right"            }
+    - { when: paging,    accept: grave,              send: "Page_Up"          }
+    - { when: has_menu,  accept: Tab,                send: "Page_Down"        }
+    - { when: paging,    accept: equal,              send: "Page_Up"          }
+    - { when: has_menu,  accept: minus,              send: "Page_Down"        }
+    - { when: always,    accept: "Control+Alt+j",    toggle: full_shape       }
+    - { when: always,    accept: "Control+Alt+f",    toggle: traditional      }
+    - { when: always,    accept: "Control+period",   toggle: ascii_punct      }
 
 recognizer:
   import_preset: default
