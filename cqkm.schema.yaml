@@ -4,7 +4,7 @@
 schema:
   schema_id: cqkm
   name: "超强快码"
-  version: "4.27"
+  version: "22.8"
   description: |
     擅长语句输入，两码一字，三码也可，弱化空格。
     与原版的、基于字词的、码表类传统输入方式相比，
@@ -19,7 +19,7 @@ schema:
     - Rime输入法引擎: "弓辰[号佛振] (2011)"
     - Fcitx输入法框架: "CSSlayer (2010), Yuking (2001-2010)"
   dependencies:
-    - pinyin
+    - pinyin_simp
 
 switches:
   - name: ascii_mode
@@ -78,7 +78,7 @@ translator:
     - "xform/~(.*)$/「$1」/"
 
 reverse_lookup:
-  dictionary: pinyin
+  dictionary: pinyin_simp
   prefix: "`"
   tips: 〔拼音反查〕
   preedit_format:
