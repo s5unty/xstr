@@ -7,12 +7,12 @@ schema:
   version: "4.27"
   description: |
     擅长语句输入，两码一字，三码也可，弱化空格。
-    与传统的基于字词的码表类输入方式相比，
-      - 输入过程中没有逐字的编码提示，对输入法初学者不友好
-      - 单字 3 码定长，取自原版码表的前 3 码，不设一简和二简
-      - 不对词组硬编码，没有 4 码定长的二字词、三字词、多字词
-      - 包含 24 万词条，由拼音输入引擎(算法)动态调整字词组合
-      - 字词可以由空格随时确认，但并没有强制依赖空格的不断确认
+    与原版的、基于字词的、码表类传统输入方式相比，
+      - 单字取原版码表的前 3 码，前两码小写，第三码大写
+      - 单字中 26 个一级简码，由一个带分号(;)的字母表示
+      - 三字(含)以上的词组，补一个分号(;)在原版编码末尾
+      - 包含 24 万词条，由拼音输入引擎动态调整字词组合
+      - 轻度缓解空格焦虑，降低右手姆指腱鞘炎的发病率 :)
   author:
     - 二笔音形编码: "陈劲松 (1992)"
     - 超强系列编码: "付东升 (2005)"
@@ -99,13 +99,12 @@ punctuator:
 key_binder:
 # import_preset: default
   bindings:
-    - { when: composing, accept: 1,                  send_sequence: "{Home}{Right}{Right}"                    }
-    - { when: composing, accept: 2,                  send_sequence: "{2}{End}"                                }
-    - { when: composing, accept: 3,                  send_sequence: "{3}{End}"                                }
-    - { when: composing, accept: 4,                  send_sequence: "{4}{End}"                                }
-    - { when: composing, accept: 5,                  send_sequence: "{5}{End}"                                }
-    - { when: composing, accept: 7,                  send_sequence: "{Shift+Left}{Shift+Left}{Right}{Right}"  }
-    - { when: composing, accept: 8,                  send_sequence: "{Shift+Left}{Right}{Right}"              }
+    - { when: composing, accept: 1,                  send_sequence: "{Home}{Right}{Right}"  }
+    - { when: composing, accept: 2,                  send_sequence: "{2}{End}"              }
+    - { when: composing, accept: 3,                  send_sequence: "{3}{End}"              }
+    - { when: composing, accept: 4,                  send_sequence: "{4}{End}"              }
+    - { when: composing, accept: 5,                  send_sequence: "{5}{End}"              }
+    - { when: composing, accept: 8,                  send_sequence: "{Shift+Left}{Right}"   }
     - { when: composing, accept: 9,                  send: "Shift+Left"  }
     - { when: composing, accept: 0,                  send: "Shift+Right" }
     - { when: composing, accept: Tab,                send: "Shift+Right" }
