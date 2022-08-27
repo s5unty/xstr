@@ -7,8 +7,8 @@
 # Rime dictionary: CQKM
 # encoding: utf-8
 ---
-name: cqkm.phrase
-version: "8.0.3"
+name: cqkm_cf.phrase
+version: "8.0.3~22.8"
 columns:
   - text
   - code

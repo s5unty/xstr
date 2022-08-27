@@ -1,0 +1,65 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: cqkm_cf
+  name: "超强快码弛放"
+  version: "22.8"
+  description: |
+    擅长语句输入，两码一字，三码也可，弱化空格。
+    与原版的、基于字词的、码表类传统输入方式相比，
+      - 单字取原版码表的前 3 码，前两码小写，第三码大写
+      - 单字中 26 个一级简码，由一个带分号(;)的字母表示
+      - 三字(含)以上的词组，补一个分号(;)在原版编码末尾
+      - 包含 24 万词条，由拼音输入引擎动态调整字词组合
+      - 轻度缓解空格焦虑，降低右手姆指腱鞘炎的发病率 :)
+  author:
+    - 二笔音形编码: "陈劲松 (1992)"
+    - 超强系列编码: "付东升 (2005)"
+    - Rime输入法引擎: "弓辰[号佛振] (2011)"
+    - Fcitx输入法框架: "CSSlayer (2010), Yuking (2001-2010)"
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    reset: 0
+    states: [ 汉字, 漢字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM;"
+  initials: "asdfgyuiopqwertzxcvbhjklnm"
+  algebra:
+    - derive/^([a-z]{2})([A-Z])$/$1/
+
+translator:
+  dictionary: cqkm_cf
+  prism: cqkm_cf
+
