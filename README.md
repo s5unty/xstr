@@ -1,6 +1,6 @@
 # fcitx5-rime
 
-## 超强快码(语句)
+## 超强快码(四二)
 
 - [超强快码官网](http://fds8866.ysepan.com/)
 - [超强快码RIME版](https://github.com/whjiang/cqeb)
