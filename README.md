@@ -93,3 +93,5 @@ Rime 内置两种输入引擎，一是「拼音」，二是「码表」。
 - [自然码轻度辅码方案](https://github.com/bigshans/rime-zrm)
 - [四叶草拼音输入方案](https://github.com/fkxxyz/rime-cloverpinyin)
 - [刘邵博360大词典](https://github.com/fkxxyz/chinese-dictionary-3.6million)
+- [英文输入方案](https://github.com/tumuyan/rime-melt)
+
