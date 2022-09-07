@@ -16,6 +16,7 @@ schema:
     - Fcitx输入法框架: "CSSlayer (2010), Yuking (2001-2010)"
   dependencies:
     - cqkm_cf
+    - melt_eng
     - pinyin_simp
 
 switches:
@@ -51,6 +52,7 @@ engine:
     - punct_translator
     - reverse_lookup_translator
     - table_translator
+    - table_translator@melt_eng
     - script_translator@assist
   filters:
     - simplifier@zh_trad
@@ -58,7 +60,7 @@ engine:
 
 speller:
   alphabet: "qwertasdfgzxcvbyuiophjklnmASDFGYUIOPQWERTZXCVBHJKLNM;"
-  initials: "qwertasdfgzxcvbyuiophjklnm"
+  initials: "qwertasdfgzxcvbyuiophjklnmASDFGYUIOPQWERTZXCVBHJKLNM"
   auto_select: false
 
 translator:
@@ -80,6 +82,15 @@ assist:
   initial_quality: 1
   dictionary: cqkm_cf
   enable_user_dict: true
+
+# 英文输入
+melt_eng:
+  initial_quality: 1.1
+  dictionary: melt_eng
+  enable_completion: true
+  enable_sentence: false
+  enable_user_dict: false
+  spelling_hints: 9
 
 # 拼音反查
 reverse_lookup:
