@@ -9,7 +9,7 @@ import_tables:
   - cqkm_cf.single        # 超强快码(弛放版)的单字码表(2码双拼 + 可选的1位辅码)
   - cqkm_cf.phrase        # 超强快码(弛放版)的词组码表(4码原版 + 必选的1位分号)
   - thuocl.it             # 清华词库-IT类
-  - nlp-ge-1000           # 360大词典(词频大于1000)
+  - Dvel-main             # Dvel 的基础词库 (https://github.com/iDvel/rime-ice)
 ...
 
 超强快码
