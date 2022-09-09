@@ -16,7 +16,6 @@ schema:
     - Fcitx输入法框架: "CSSlayer (2010), Yuking (2001-2010)"
   dependencies:
     - cqkm_cf
-    - melt_eng
     - pinyin_simp
 
 switches:
@@ -52,7 +51,6 @@ engine:
     - punct_translator
     - reverse_lookup_translator
     - table_translator
-    - table_translator@melt_eng
     - script_translator@assist
   filters:
     - simplifier@zh_trad
@@ -83,15 +81,6 @@ assist:
   dictionary: cqkm_cf
   enable_user_dict: true
 
-# 英文输入
-melt_eng:
-  initial_quality: 1.1
-  dictionary: melt_eng
-  enable_completion: true
-  enable_sentence: false
-  enable_user_dict: false
-  spelling_hints: 9
-
 # 拼音反查
 reverse_lookup:
   dictionary: pinyin_simp
@@ -117,6 +106,11 @@ punctuator:
 key_binder:
 # import_preset: default
   bindings:
+    - { when: composing, accept: "Control+a",        send: "Home"             }
+    - { when: composing, accept: "Control+e",        send: "End"              }
+    - { when: composing, accept: "Control+w",        send: "Shift+BackSpace"  }
+    - { when: composing, accept: "Control+f",        send: "Right"            }
+    - { when: composing, accept: "Control+d",        send: "Delete"           }
     - { when: composing, accept: 8,                  send: "Shift+BackSpace"  }
     - { when: composing, accept: 9,                  send: "Shift+Left"       }
     - { when: composing, accept: parenleft,          send: "Left"             }
