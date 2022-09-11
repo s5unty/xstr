@@ -2,8 +2,9 @@
 
 ## 超强快码(四二)
 
-- [超强快码官网](http://fds8866.ysepan.com/)
-- [超强快码RIME版](https://github.com/whjiang/cqeb)
+- [两笔输入法介绍](https://lbzj.github.io/)
+- [超强系列官网](http://fds8866.ysepan.com/)
+- [超强系列输入法(RIME)](https://github.com/whjiang/cqeb)
 
 <details><summary>超强快码键位图</summary>
 
@@ -51,6 +52,8 @@ Rime 内置两种输入引擎，一是「拼音」，二是「码表」。
 
 完全仿照双拼输入法的——两码一字、两码两码、被动组词的输入模式。
 
+## 对比示意
+
 以【我能吞下玻璃而不伤身体】这句话为例，类比了几种不同输入方式下的按键，  
 其中「～」波浪号是虚拟示意的分割符，并非真实按键。「_」下划线表示空格。
 
@@ -86,9 +89,14 @@ Rime 内置两种输入引擎，一是「拼音」，二是「码表」。
 
     ![](https://www.du1ab.one/images/2022/cqkm_42-3.gif)
 
+## 四二练习
+
+照搬[双拼练习工具](https://github.com/BlueSky-07/Shuang)捣鼓了一个[快码(四二)练习工具](https://du1ab.one/42)，每字只靠前两码。  
+除了一简(字母加分号)的编码和超强快码不同，其它编码都保持一致。  
+为了强化 U 简，有 U 简只出 U 简，例如「对」，不是 dx 而是 ux。
+
 ## ref
 
-- [两笔之家 - 超强快码、超强两笔、超强音形输入法 一种音形码输入法](https://liangbi.gitee.io/)
 - [Schema.yaml 詳解 · LEOYoon-Tsaw/Rime_collections](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md)
 - [现代汉语单字字频](https://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO)
 - [清华大学中文词库](https://github.com/thunlp/THUOCL)
