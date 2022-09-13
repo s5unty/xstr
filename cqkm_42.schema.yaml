@@ -130,7 +130,7 @@ recognizer:
   import_preset: default
   patterns:
     punct: '^/([0-9]|[a-z]+)$'
-    assist: "^[a-z](;|[a-zA-Z;]{3})[a-zA-Z;]*$"
+    assist: "^[a-z](;|[a-zA-Z;']{3})[a-zA-Z;']*$"
     reverse_lookup: "^`[a-zA-Z]*'?$"
 
 menu:

@@ -53,11 +53,11 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM;"
+  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM;'"
   initials: "asdfgyuiopqwertzxcvbhjklnm"
   algebra:
     - derive/^([a-z]{2})([a-zA-Z])$/$1/
-    - abbrev/^([a-z]{2})([a-zA-Z])$/$1;/
+    - abbrev/^([a-z]{2})([a-zA-Z])$/$1'/
 
 translator:
   dictionary: cqkm_cf
