@@ -26,7 +26,7 @@ switches:
     states: [ 半, 全 ]
   - name: ascii_punct
     states: [ 。, ． ]
-  - name: zh_trad
+  - name: traditional
     reset: 0
     states: [ 简, 繁 ]
 
@@ -53,7 +53,7 @@ engine:
     - table_translator
     - script_translator@assist
   filters:
-    - simplifier@zh_trad
+    - simplifier@traditional
     - uniquifier
 
 speller:
@@ -95,9 +95,9 @@ reverse_lookup:
     - xform/^[ ]+//
     - xform/([ ])+/ ~/
 
-zh_trad:
+traditional:
   opencc_config: s2tw.json
-  option_name: zh_trad
+  option_name: traditional
 
 # 标点
 punctuator:
