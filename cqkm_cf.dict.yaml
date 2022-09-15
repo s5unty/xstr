@@ -1,6 +1,6 @@
 ---
 name: cqkm_cf
-version: "22.8"
+version: "22.9"
 use_preset_vocabulary: true
 # 词汇表 (*.txt)
 vocabulary: essay-zh-hans # 官方简体词汇表 (https://github.com/rime/rime-essay-simp)

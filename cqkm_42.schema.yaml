@@ -4,7 +4,7 @@
 schema:
   schema_id: cqkm_42
   name: "快码四二"
-  version: "22.8"
+  version: "22.9"
   description: |
     兼具单字(码表)和词句(拼音)的混输方案。
     小于等于四码时，表现为码表形式，与原版基本一致，便于输入单字。
@@ -57,16 +57,12 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "qwertasdfgzxcvbyuiophjklnmASDFGYUIOPQWERTZXCVBHJKLNM;"
-  initials: "qwertasdfgzxcvbyuiophjklnmASDFGYUIOPQWERTZXCVBHJKLNM"
+  alphabet: "qwertasdfgzxcvbyuiophjklnm;"
   auto_select: false
 
 translator:
   initial_quality: 2
   dictionary: cqkm_42
-  max_phrase_length: 3
-  disable_user_dict_for_patterns:
-    - "^[a-zA-Z;]{1,2}$"   # 保护1简2简
   enable_completion: true
   enable_charset_filter: true
   encode_commit_history: false
@@ -91,7 +87,7 @@ reverse_lookup:
     - xform/^`//
   comment_format:
     # 以 i,u,v 开头的编码，在反查结果中排除
-    - xform/(^|[ ])[iuv][a-zA-Z]*//
+    - xform/(^|[ ])[iuv][a-z]*//
     - xform/^[ ]+//
     - xform/([ ])+/ ~/
 
@@ -130,8 +126,8 @@ recognizer:
   import_preset: default
   patterns:
     punct: '^/([0-9]|[a-z]+)$'
-    assist: "^[a-z](;|[a-zA-Z;']{3})[a-zA-Z;']*$"
-    reverse_lookup: "^`[a-zA-Z]*'?$"
+    assist: "^[a-z](;|[a-z;]{3})[a-z;]*$"
+    reverse_lookup: "^`[a-z]*$"
 
 menu:
   page_size: 5
