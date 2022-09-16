@@ -15,7 +15,7 @@ schema:
     - Rime输入法引擎: "弓辰[号佛振] (2011)"
     - Fcitx输入法框架: "CSSlayer (2010), Yuking (2001-2010)"
   dependencies:
-    - cqkm_cf
+    - cqkm_sp
     - pinyin_simp
 
 switches:
@@ -74,7 +74,7 @@ translator:
 assist:
   tag: assist
   initial_quality: 1
-  dictionary: cqkm_cf
+  dictionary: cqkm_sp
   enable_user_dict: true
 
 # 拼音反查

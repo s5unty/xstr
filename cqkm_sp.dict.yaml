@@ -1,13 +1,13 @@
 ---
-name: cqkm_cf
+name: cqkm_sp
 version: "22.9"
 use_preset_vocabulary: true
 # 词汇表 (*.txt)
 vocabulary: essay-zh-hans # 官方简体词汇表 (https://github.com/rime/rime-essay-simp)
 # 字词典 (*.dict.yaml)
 import_tables:
-  - cqkm_cf.single        # 超强快码(弛放版)的单字码表(2码双拼 + 可选的1位辅码)
-  - cqkm_cf.phrase        # 超强快码(弛放版)的词组码表(4码原版 + 必选的1位分号)
+  - cqkm_sp.single        # 超强快码(双拼版)的单字码表
+  - cqkm_sp.phrase        # 超强快码(双拼版)的词组码表
   - thuocl.it             # 清华词库-IT类
   - Dvel-main             # Dvel 的基础词库 (https://github.com/iDvel/rime-ice)
 ...

@@ -2,13 +2,13 @@
 # encoding: utf-8
 
 schema:
-  schema_id: cqkm_cf
-  name: "超强快码弛放"
+  schema_id: cqkm_sp
+  name: "超强快码双拼"
   version: "22.8"
   description: |
-    仿照带辅助码的双拼输入法，两码一字，第三码辅码。
+    仿照双拼输入法，两码一字，依靠内置词库，实现连续输入
     在这种输入模式下，与原版的基于码表的输入方式相比，有以下主要差别——
-      - 每字的编码，对应原版码表的前三码，第三码作为辅码
+      - 每字的编码，对应原版码表的前两码
       - 单字中 26 个一级简码，由一个带分号(`;`)的字母表示
       - 三字(含)以上的词组，补一个分号(`;`)在原版编码末尾
       - 包含 46 万词条，由拼音输入引擎动态调整字词组合
@@ -58,6 +58,6 @@ speller:
     - abbrev/^([a-z]{2}).*$/$1;/
 
 translator:
-  dictionary: cqkm_cf
-  prism: cqkm_cf
+  dictionary: cqkm_sp
+  prism: cqkm_sp
 
