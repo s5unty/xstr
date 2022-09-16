@@ -58,6 +58,7 @@ engine:
 
 speller:
   alphabet: "qwertasdfgzxcvbyuiophjklnm;"
+  initials: "qwertasdfgzxcvbyuiophjklnm"
   auto_select: false
 
 translator:
