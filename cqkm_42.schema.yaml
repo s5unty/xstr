@@ -57,8 +57,8 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "qwertasdfgzxcvbyuiophjklnm;"
-  initials: "qwertasdfgzxcvbyuiophjklnm"
+  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM;"
+  initials: "asdfgyuiopqwertzxcvbhjklnm"
   auto_select: false
 
 translator:
@@ -127,7 +127,7 @@ recognizer:
   import_preset: default
   patterns:
     punct: '^/([0-9]|[a-z]+)$'
-    assist: "^[a-z](;|[a-z;]{3})[a-z;]*$"
+    assist: "^[a-z](;|[a-z;]{3})[a-zA-Z;]*$"
     reverse_lookup: "^`[a-z]*$"
 
 menu:

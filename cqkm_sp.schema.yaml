@@ -6,12 +6,12 @@ schema:
   name: "超强快码双拼"
   version: "22.8"
   description: |
-    仿照双拼输入法，两码一字，依靠内置词库，实现连续输入
-    在这种输入模式下，与原版的基于码表的输入方式相比，有以下主要差别——
-      - 每个字的编码，只取原码的前两码，舍弃后两码
-      - 一简字，是在首字母之后补一个分号(`;`)或者字母(`z`)
-      - 三字(含)以上的词组，在原版编码的末尾补一个分号(`;`)
-      - 依靠众多的词条，动态组词、减少重码、提高准确度
+    仿照双拼输入法，两键一字，节奏整齐，依靠内置词库，实现连续输入。
+    在这种连续输入模式下，与基于码表的原版输入法相比，有以下主要差别——
+      - 每个字最多只取三码，第三码作为辅码、输入时需要大写
+      - 一简字，必须补一个分号(`;`)或者字母(`z`)补齐到两码
+      - 二字词，可在末尾添分号(`;`)，例如维护(维)和看到(看)
+      - 三字(含)以上的词组，在原版四码的末尾需补一个分号(`;`)
   author:
     - 二笔音形编码: "陈劲松 (1992)"
     - 超强系列编码: "付东升 (2005)"
@@ -53,9 +53,11 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "asdfgyuiopqwertzxcvbhjklnm;"
+  alphabet: "asdfgyuiopqwertzxcvbhjklnmASDFGYUIOPQWERTZXCVBHJKLNM;"
+  initials: "asdfgyuiopqwertzxcvbhjklnm"
   algebra:
-    - abbrev/^([a-z]{2}).*$/$1;/
+    - derive/^([a-z]{2})[A-Z]$/$1;/
+    - abbrev/^([a-z]{2})[A-Z]$/$1/
 
 translator:
   dictionary: cqkm_sp
