@@ -36,8 +36,8 @@ engine:
     - recognizer
     - key_binder
     - speller
-    - punctuator
     - selector
+    - punctuator
     - navigator
     - express_editor
   segmentors:
@@ -103,11 +103,11 @@ punctuator:
 key_binder:
 # import_preset: default
   bindings:
-    - { when: composing, accept: "Control+a",        send: "Home"             }
-    - { when: composing, accept: "Control+e",        send: "End"              }
-    - { when: composing, accept: "Control+w",        send: "Shift+BackSpace"  }
-    - { when: composing, accept: "Control+f",        send: "Right"            }
-    - { when: composing, accept: "Control+d",        send: "Delete"           }
+    - { when: composing, accept: 1,                  send_sequence: "{Home}{Shift+Right}{space}" }
+    - { when: composing, accept: 2,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{space}" }
+    - { when: composing, accept: 3,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{Shift+Right}{space}" }
+    - { when: composing, accept: 4,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{space}" }
+    - { when: composing, accept: 5,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{space}" }
     - { when: composing, accept: 8,                  send: "Shift+BackSpace"  }
     - { when: composing, accept: 9,                  send: "Shift+Left"       }
     - { when: composing, accept: parenleft,          send: "Left"             }
@@ -131,7 +131,7 @@ recognizer:
     reverse_lookup: "^`[a-z]*$"
 
 menu:
-  page_size: 5
-  alternative_select_keys: "12345"
-  alternative_select_labels: ["1","2","3","4","5"]
+  page_size: 4
+  alternative_select_keys: "_,./"
+  alternative_select_labels: ["…","，","。","／"]
 

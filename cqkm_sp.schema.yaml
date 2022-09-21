@@ -36,8 +36,8 @@ engine:
     - recognizer
     - key_binder
     - speller
-    - punctuator
     - selector
+    - punctuator
     - navigator
     - express_editor
   segmentors:
