@@ -103,11 +103,9 @@ punctuator:
 key_binder:
 # import_preset: default
   bindings:
-    - { when: composing, accept: 1,                  send_sequence: "{Home}{Shift+Right}{space}" }
-    - { when: composing, accept: 2,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{space}" }
-    - { when: composing, accept: 3,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{Shift+Right}{space}" }
-    - { when: composing, accept: 4,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{space}" }
-    - { when: composing, accept: 5,                  send_sequence: "{Home}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{space}" }
+    - { when: composing, accept: comma,              send: "2" }
+    - { when: composing, accept: period,             send: "3" }
+    - { when: composing, accept: slash,              send: "4" }
     - { when: composing, accept: 8,                  send: "Shift+BackSpace"  }
     - { when: composing, accept: 9,                  send: "Shift+Left"       }
     - { when: composing, accept: parenleft,          send: "Left"             }
@@ -132,6 +130,6 @@ recognizer:
 
 menu:
   page_size: 4
-  alternative_select_keys: "_,./"
-  alternative_select_labels: ["…","，","。","／"]
+  alternative_select_keys: "1234"
+  alternative_select_labels: ["1","2","3","4"]
 
