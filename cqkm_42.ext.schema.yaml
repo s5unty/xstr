@@ -2,9 +2,9 @@
 # encoding: utf-8
 
 schema:
-  schema_id: cqkm_sp
+  schema_id: cqkm_42.ext
   name: "超强快码双拼"
-  version: "22.8"
+  version: "22.10"
   description: |
     仿照双拼输入法，两键一字，节奏整齐，依靠内置词库，实现连续输入。
     在这种连续输入模式下，与基于码表的原版输入法相比，有以下主要差别——
@@ -60,6 +60,6 @@ speller:
     - abbrev/^([a-z]{2})[A-Z]$/$1/
 
 translator:
-  dictionary: cqkm_sp
-  prism: cqkm_sp
+  dictionary: cqkm_42.ext
+  prism: cqkm_42.ext
 
