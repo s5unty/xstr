@@ -131,5 +131,6 @@ recognizer:
 menu:
   page_size: 4
   alternative_select_keys: "1234"
-  alternative_select_labels: ["1","2","3","4"]
+# alternative_select_labels: [ "1", "2", "3", "4"]  # windows
+  alternative_select_labels: ["⒈","⒉","⒊","⒋"]  # linux
 
