@@ -62,7 +62,7 @@ speller:
   auto_select: false
 
 translator:
-  initial_quality: 2
+  initial_quality: 1
   dictionary: cqkm_42
   enable_completion: true
   enable_charset_filter: true
@@ -74,7 +74,7 @@ translator:
 # 副翻译器
 assist:
   tag: assist
-  initial_quality: 1
+  initial_quality: 46600000
   dictionary: cqkm_42.ext
   enable_user_dict: true
 
@@ -125,7 +125,7 @@ recognizer:
   import_preset: default
   patterns:
     punct: '^/([0-9]|[a-z]+)$'
-    assist: "[a-z][a-zA-Z;]{2,}"
+    assist: "^[a-z][a-zA-Z;]{3,}"
     reverse_lookup: "^`[a-z]*$"
 
 menu:
