@@ -73,8 +73,8 @@ translator:
 
 # 副翻译器
 assist:
+# initial_quality: 8100000
   tag: assist
-  initial_quality: 46600000
   dictionary: cqkm_42.ext
   enable_user_dict: true
 
