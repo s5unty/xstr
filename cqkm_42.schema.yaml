@@ -115,10 +115,11 @@ key_binder:
     - { when: composing, accept: 0,                  send: "Shift+Right"      }
     - { when: composing, accept: parenright,         send: "Right"            }
     - { when: composing, accept: "Shift+parenright", send: "Right"            }
-    - { when: composing, accept: minus,              send: "Escape"           }
     - { when: composing, accept: bracketleft,        send: "Shift+BackSpace"  }
-    - { when: paging,    accept: grave,              send: "Page_Up"          }
-    - { when: has_menu,  accept: Tab,                send: "Page_Down"        }
+    - { when: composing, accept: Tab,                send: "Escape"           }
+    - { when: has_menu,  accept: grave,              send: "Home"             }
+    - { when: paging,    accept: equal,              send: "Page_Up"          }
+    - { when: composing, accept: minus,              send: "Page_Down"        }
     - { when: always,    accept: "Control+Alt+j",    toggle: full_shape       }
     - { when: always,    accept: "Control+Alt+f",    toggle: traditional      }
     - { when: always,    accept: "Control+period",   toggle: ascii_punct      }
