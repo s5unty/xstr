@@ -118,6 +118,7 @@ key_binder:
     - { when: composing, accept: bracketleft,        send: "Shift+BackSpace"  }
     - { when: composing, accept: Tab,                send: "Escape"           }
     - { when: has_menu,  accept: grave,              send: "Home"             }
+    - { when: paging,    accept: 0,                  send: "Page_Up"          } # 翻页之后，「0」由左右移动，变为向上翻页
     - { when: paging,    accept: equal,              send: "Page_Up"          }
     - { when: composing, accept: minus,              send: "Page_Down"        }
     - { when: always,    accept: "Control+Alt+j",    toggle: full_shape       }
