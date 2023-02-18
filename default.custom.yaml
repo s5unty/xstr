@@ -7,6 +7,6 @@ patch:
     hotkeys:
       - "Control+Alt+k"
   ascii_composer/switch_key:
-    Shift_L: inline_ascii
+    Shift_L: commit_code
     Shift_R: noop
 

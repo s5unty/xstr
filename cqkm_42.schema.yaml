@@ -102,25 +102,24 @@ punctuator:
 
 key_binder:
   # import_preset: default
-  # 以词定字插件(lua/select_character.lua)改为5和8
-  select_first_character: "5"
-  select_last_character: "8"
+# # 以词定字插件(lua/select_character.lua)改为5和7
+# select_first_character: "5"
+# select_last_character: "7"
   bindings:
     - { when: composing, accept: comma,              send: "2" }
     - { when: composing, accept: period,             send: "3" }
     - { when: composing, accept: slash,              send: "4" }
-    - { when: composing, accept: 9,                  send: "Shift+Left"       }
+    - { when: composing, accept: 8,                  send: "Shift+Left"       }
     - { when: composing, accept: parenleft,          send: "Left"             }
     - { when: composing, accept: "Shift+parenleft",  send: "Left"             }
-    - { when: composing, accept: 0,                  send: "Shift+Right"      }
+    - { when: composing, accept: 9,                  send: "Shift+Right"      }
     - { when: composing, accept: parenright,         send: "Right"            }
     - { when: composing, accept: "Shift+parenright", send: "Right"            }
     - { when: composing, accept: bracketleft,        send: "Shift+BackSpace"  }
     - { when: composing, accept: Tab,                send: "Escape"           }
     - { when: has_menu,  accept: grave,              send: "Home"             }
-    - { when: paging,    accept: 0,                  send: "Page_Up"          } # 翻页之后，「0」由左右移动，变为向上翻页
-    - { when: paging,    accept: equal,              send: "Page_Up"          }
-    - { when: composing, accept: minus,              send: "Page_Down"        }
+    - { when: composing, accept: 0,                  send: "Page_Down"        }
+    - { when: paging,    accept: 9,                  send: "Page_Up"          } # 翻页之后，「9」由左右移动，变为向上翻页
     - { when: always,    accept: "Control+Alt+j",    toggle: full_shape       }
     - { when: always,    accept: "Control+Alt+f",    toggle: traditional      }
     - { when: always,    accept: "Control+period",   toggle: ascii_punct      }
