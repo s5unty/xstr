@@ -130,11 +130,11 @@ recognizer:
   patterns:
     punct: '^/([0-9]|[a-z]+)$'
     assist: "^[a-z][a-zA-Z;]{3,}"
-    reverse_lookup: "^~[a-z]*$"
+    reverse_lookup: "^~[a-z0-9/-:.]*$"
 
 menu:
   page_size: 4
   alternative_select_keys: "1234"
 # alternative_select_labels: [ "1", "2", "3", "4"]  # windows
-  alternative_select_labels: ["⒈","⒉","⒊","⒋"]  # linux
+  alternative_select_labels: ["①","②","③","④"]  # linux
 
