@@ -82,10 +82,10 @@ assist:
 reverse_lookup:
   dictionary: pinyin_simp
   enable_user_dict: false
-  prefix: ":"
+  prefix: "~"
   tips: 〔拼音反查〕
   preedit_format:
-    - xform/^://
+    - xform/^~//
   comment_format:
     # 以 i,u,v 开头的编码，在反查结果中排除
     - xform/(^|[ ])[iuv][a-z]*//
@@ -130,7 +130,7 @@ recognizer:
   patterns:
     punct: '^/([0-9]|[a-z]+)$'
     assist: "^[a-z][a-zA-Z;]{3,}"
-    reverse_lookup: "^:[a-z]*$"
+    reverse_lookup: "^~[a-z]*$"
 
 menu:
   page_size: 4
