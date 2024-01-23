@@ -117,9 +117,9 @@ key_binder:
     - { when: has_menu,  accept: grave,              send: "Home"             }
     - { when: composing, accept: 0,                  send: "Page_Down"        }
     - { when: paging,    accept: 9,                  send: "Page_Up"          } # 翻页之后，「9」由左右移动，变为向上翻页
-    - { when: always,    accept: "Control+Alt+j",       toggle: full_shape    }
-    - { when: always,    accept: "Control+Alt+f",       toggle: traditional   }
-    - { when: always,    accept: "Control+Alt+period",  toggle: ascii_punct   }
+    - { when: always,    accept: "Control+Alt+j",    toggle: full_shape       }
+    - { when: always,    accept: "Control+Alt+f",    toggle: traditional      }
+    - { when: always,    accept: "Control+period",   toggle: ascii_punct      }
 
 # 杂项
 recognizer:
