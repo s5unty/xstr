@@ -6,9 +6,9 @@
 
 <details><summary>超强快码键位图</summary>
 
-![](https://du1ab.one/images/2022/chao_qiang_kuai_ma_kb.png)
+![](https://blog.du1ab.org/2022/chao_qiang_kuai_ma_kb.png)
 
-![](https://du1ab.one/images/2022/chao_qiang_kuai_ma_ref.png)
+![](https://blog.du1ab.org/2022/chao_qiang_kuai_ma_ref.png)
 </details>
 
 兼具单字(码表)和词句(双拼)的混输方案。  
@@ -25,7 +25,7 @@
 
 <details><summary>轻度缓解空格焦虑，降低右手姆指腱鞘炎的发病率 :)</summary>
 
-![](https://du1ab.one/images/2022/finkelstein_test.png)
+![](https://blog.du1ab.org/2022/finkelstein_test.png)
 </details>
 
 ## 特点说明
@@ -71,23 +71,23 @@ Rime 内置两种输入引擎，一是「拼音」，二是「码表」。
 
   `wr～nx～tj～xm～bj～li～eh～bh～shR～sq～th～2～3`
 
-    ![](https://www.du1ab.one/images/2022/cqkm_42-1.gif)
+    ![](https://blog.du1ab.org/2022/cqkm_42-1.gif)
 
 - 超强快码/四二 (30 次按键，一次到位，其中空格 8 次)
 
   `o_～nx_～tjg_～xm_～bjlj_～e_～b_～shr_～sqth_`
 
-    ![](https://www.du1ab.one/images/2022/cqkm_42-2.gif)
+    ![](https://blog.du1ab.org/2022/cqkm_42-2.gif)
 
 - 超强快码/四二 (『没什么』三字词示意，『吞』回调定字的示意)  
   数字键定字，此时输入模式仍然处于拼音模式，因此辅码需要大写
 
-    ![](https://www.du1ab.one/images/2022/cqkm_42-3-1.gif)
+    ![](https://blog.du1ab.org/2022/cqkm_42-3-1.gif)
 
 - 超强快码/四二 (『没什么』三字词示意，『吞』回调定字的示意)  
   空格键定字，此时输入模式自动转为码表模式，因此补码小写即可
 
-    ![](https://www.du1ab.one/images/2022/cqkm_42-3-2.gif)
+    ![](https://blog.du1ab.org/2022/cqkm_42-3-2.gif)
 
 注意，最后两个示例中的【回调】定字，在拼音和码表，两种不同模式之间的差别——
 
@@ -152,7 +152,7 @@ Rime 内置两种输入引擎，一是「拼音」，二是「码表」。
 
 ## 四二练习
 
-照搬[双拼练习工具](https://github.com/BlueSky-07/Shuang)捣鼓了一个[快码(四二)练习工具](https://du1ab.one/42)，每字只靠前两码。  
+照搬[双拼练习工具](https://github.com/BlueSky-07/Shuang)捣鼓了一个[~~快码(四二)练习工具~~ (待修复)](https://du1ab.org/42)，每字只靠前两码。  
 除了一简(字母加分号)的编码和超强快码不同，其它编码都保持一致。  
 为了强化 U 简，有 U 简只出 U 简，例如「对」，不是 dx 而是 ux。
 
