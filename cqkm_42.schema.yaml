@@ -3,7 +3,7 @@
 
 schema:
   schema_id: cqkm_42
-  name: "快码四二"
+  name: "快码双拼"
   version: "22.9"
   description: |
     兼具单字(码表)和词句(拼音)的混输方案。

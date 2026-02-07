@@ -3,7 +3,7 @@
 
 schema:
   schema_id: cqkm_42.ext
-  name: "超强快码双拼"
+  name: "快码双拼"
   version: "22.10"
   description: |
     仿照双拼输入法，两键一字，节奏整齐，依靠内置词库，实现连续输入。
