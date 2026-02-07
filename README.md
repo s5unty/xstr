@@ -152,7 +152,8 @@ Rime 内置两种输入引擎，一是「拼音」，二是「码表」。
 
 ## 快码双拼练习
 
-照搬[双拼练习工具](https://github.com/BlueSky-07/Shuang)捣鼓了一个[~~快码(双拼)练习工具~~ (待修复)](https://du1ab.org/42)，每字只靠前两码。  
+指使 Codex-5.3，凭借空虚的前端技能，在一天内捣鼓了一个[快码双拼中文打字游戏](https://xstr.du1ab.org)([代码](https://github.com/s5unty/xstr-demo))。  
+~~照搬[双拼练习工具](https://github.com/BlueSky-07/Shuang)捣鼓了一个[快码(双拼)练习工具(待修复)](https://du1ab.org/42)，每字只靠前两码。~~  
 除了一简(字母加分号)的编码和超强快码不同，其它编码都保持一致。  
 为了强化 U 简，有 U 简只出 U 简，例如「对」，不是 dx 而是 ux。
 
