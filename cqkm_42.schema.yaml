@@ -103,8 +103,9 @@ punctuator:
 key_binder:
   # import_preset: default
   bindings:
-    - { when: composing, accept: comma,              send: "2" }
-    - { when: composing, accept: period,             send: "3" }
+    - { when: composing, accept: Return,             send: ";"                }
+#   - { when: composing, accept: Return,             send: space              }
+#   - { when: composing, accept: space,              send: ";"                }
     - { when: composing, accept: 9,                  send: "Shift+Left"       }
     - { when: composing, accept: parenleft,          send: "Left"             }
     - { when: composing, accept: "Shift+parenleft",  send: "Left"             }
